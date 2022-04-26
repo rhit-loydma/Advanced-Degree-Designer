@@ -10,3 +10,16 @@ body {
 .page-container {
     margin-top: 75px;
 }
+
+.signIn {
+    color: white;
+    background: #800000;
+    border-radius: 5px;
+}
+
+#rosefireButton {
+    display: block;
+    margin: 60px auto;
+    padding: 10px 30px;
+    font-size: 1.1em;
+}

@@ -14,14 +14,38 @@
   <nav class="navbar navbar-dark fixed-top">
     <a class="navbar-brand" href="#">Advanced Degree Designer</a>
   </nav>
-  <div id="mainPage" class="container page-container">
 
-
+  <div id="loginPage" class="container page-container">
+    <div id="signInContainer" class="row no-gutters justify-content-center">
+      <div class="col-8 col-md-6">
+          <div class="form-group bmd-form-group">
+            <label for="inputEmail" class="bmd-label-floating">Email</label>
+            <input type="email" class="form-control" id="inputEmail">
+          </div>
+          <div class="form-group bmd-form-group">
+            <label for="inputPassword" class="bmd-label-floating">Password</label>
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+    
+          <button id="createAccountButton" type="button" class="btn signIn">Create Account</button>
+          <button id="logInButton" type="button" class="btn signIn">Log in to existing account</button>
+    
+          <hr>
+          <button id="anonAuthButton" type="button" class="btn signIn">Log in as guest</button>
+          <hr>
+      </div>
+      <div class="col-8 col-md-6">
+        <button id="rosefireButton" type="button" class="btn signIn">Sign in with Rosefire</button>
+      </div>
+    </div>
   </div>
+
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>
-  <script>$("body").bootstrapMaterialDesign();</script>
+  <script>
+    $("body").bootstrapMaterialDesign();
+  </script>
   <script src="/__/firebase/7.18.0/firebase-app.js"></script>
   <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
   <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
